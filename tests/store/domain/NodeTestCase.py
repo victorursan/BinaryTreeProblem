@@ -1,3 +1,5 @@
+from store.domain.Node import Node
+
 __author__ = 'victor'
 
 from unittest import TestCase
@@ -15,7 +17,7 @@ class NodeTestCase(TestCase):
         test if the Node's data is the expected one
         '''
         self.assertEqual(self.node.data, 10)
-        self.assertNotEqual(self.node.left.data, 5)
+        self.assertNotEqual(self.node.data, 5)
 
     def test_left(self):
         '''
