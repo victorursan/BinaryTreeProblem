@@ -33,8 +33,7 @@ class Node(object):
 
     def __eq__(self, other):
         if type(other) == Node:
-            if self.data == other.data:
-                return True
+            return self.data == other.data
         return False
 
     def __ne__(self, other):

@@ -2,6 +2,7 @@ __author__ = 'victor'
 
 from unittest import TestCase
 from store.domain.Node import Node
+from store.domain.BinarySearchTree import BinarySearchTree
 
 
 class BinarySearchTreeTestCase(TestCase):
@@ -45,3 +46,10 @@ class BinarySearchTreeTestCase(TestCase):
         self.assertEqual(self.bst.search(54), (Node(54), Node(76)))
         self.bst.delete(50)
         self.assertEqual(self.bst.search(76), (Node(76), Node(54)))
+
+    def test_children_count(self):
+        """
+        test if the node has the corresponding number of children
+        """
+        self.assertEqual(self.bst.children_count(), 2)
+        self.assertEqual(self.bst.left.right.children_count(), 1)
