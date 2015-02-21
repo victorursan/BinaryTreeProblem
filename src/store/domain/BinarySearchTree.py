@@ -102,3 +102,26 @@ class BinarySearchTree(Node):
         if self.right:
             count += 1
         return count
+
+    def nodes_in_range(self, low, high, lst=None):
+        """ Searches for all nodes in range
+
+        :param low: lower end of the range
+        :param high: higher end of the range
+        :param lst: list of nodes
+        :returns: a list of nodes in range
+        """
+        if not lst:
+            lst = []
+        if self.data in range(low, high + 1):
+            lst.append(self)
+            if self.left:
+                self.left.nodes_in_range(low, high, lst)
+            if self.right:
+                self.right.nodes_in_range(low, high, lst)
+        else:
+            if low <= self.data and self.left:
+                self.left.nodes_in_range(low, high, lst)
+            if high >= self.data and self.right:
+                self.right.nodes_in_range(low, high, lst)
+        return lst
