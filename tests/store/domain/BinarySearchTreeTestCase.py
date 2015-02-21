@@ -53,3 +53,9 @@ class BinarySearchTreeTestCase(TestCase):
         """
         self.assertEqual(self.bst.children_count(), 2)
         self.assertEqual(self.bst.left.right.children_count(), 1)
+
+    def test_nodes_in_range(self):
+        """
+        test if the nodes between the range are the expected ones
+        """
+        self.assertEqual({n.data for n in self.bst.nodes_in_range(10, 60)}, {50, 12, 17, 14, 23, 54, 19})
