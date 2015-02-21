@@ -35,7 +35,7 @@ class BinarySearchTree(Node):
 
         :param data: node data object to look up
         :param parent: node's parent
-        :return: node and node's parent if found or None, None
+        :returns: node and node's parent if found or None, None
         """
         if data < self.data:
             if self.left is None:
@@ -94,7 +94,7 @@ class BinarySearchTree(Node):
     def children_count(self):
         """Return the number of children
 
-        :returns number of children (0, 1, 2)
+        :returns: number of children (0, 1, 2)
         """
         count = 0
         if self.left:
