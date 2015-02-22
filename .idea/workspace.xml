@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3c8e8b61-c84d-47ea-aa2b-b5dc8fdd32ae" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/store/controller/BSTControllerTestCase.py" afterPath="$PROJECT_DIR$/tests/store/controller/BSTControllerTestCase.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/controller/BSTController.py" afterPath="$PROJECT_DIR$/src/store/controller/BSTController.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/repository/BSTFileRepository.py" afterPath="$PROJECT_DIR$/src/store/repository/BSTFileRepository.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/domain/BinarySearchTree.py" afterPath="$PROJECT_DIR$/src/store/domain/BinarySearchTree.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/store/repository/Repository.py" afterPath="$PROJECT_DIR$/src/store/repository/Repository.py" />
     </list>
     <ignored path="BinaryTreeProblem.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,6 +27,7 @@
     <SUITE FILE_PATH="coverage/BinaryTreeProblem$Unittests_in_TestNode.coverage" NAME="Unittests in TestNode Coverage Results" MODIFIED="1424526404389" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/store/domain" />
     <SUITE FILE_PATH="coverage/BinaryTreeProblem$Unittests_in_BSTControllerTestCase.coverage" NAME="Unittests in BSTControllerTestCase Coverage Results" MODIFIED="1424620691520" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/store/controller" />
     <SUITE FILE_PATH="coverage/BinaryTreeProblem$Unittests_in_BinarySearchTreeTestCase.coverage" NAME="Unittests in BinarySearchTreeTestCase Coverage Results" MODIFIED="1424536824260" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/store/domain" />
+    <SUITE FILE_PATH="coverage/BinaryTreeProblem$main.coverage" NAME="main Coverage Results" MODIFIED="1424633547569" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/store" />
     <SUITE FILE_PATH="coverage/BinaryTreeProblem$test_main.coverage" NAME="test_main Coverage Results" MODIFIED="1424615997038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/store" />
     <SUITE FILE_PATH="coverage/BinaryTreeProblem$Unittests_in_tests.coverage" NAME="Unittests in  Coverage Results" MODIFIED="1424537252295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests/store" />
   </component>
@@ -45,24 +49,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="BSTFileRepository.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/store/repository/BSTFileRepository.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
+              <caret line="72" column="39" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
+              <folding>
+                <element signature="e#23#73#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Repository.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/repository/Repository.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
-              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
+              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BSTFileRepository.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/store/repository/BSTFileRepository.py">
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/store/ui/__init__.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="215" max-vertical-offset="915">
-              <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-              <folding>
-                <element signature="e#23#73#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="105">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -80,20 +94,17 @@
       <file leaf-file-name="BinarySearchTree.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/domain/BinarySearchTree.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1980">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_domain.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/store/domain/test_domain.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-              <caret line="11" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+              <caret line="134" column="29" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
               <folding>
-                <element signature="e#23#38#0" expanded="true" />
+                <element signature="e#128#242#0" expanded="false" />
+                <element signature="e#280#822#0" expanded="false" />
+                <element signature="e#873#1455#0" expanded="false" />
+                <element signature="e#1493#2941#0" expanded="false" />
+                <element signature="e#2981#3203#0" expanded="false" />
+                <element signature="e#3264#4005#0" expanded="false" />
+                <element signature="e#4038#4161#0" expanded="false" />
+                <element signature="e#4195#4320#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -102,9 +113,19 @@
       <file leaf-file-name="Node.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/domain/Node.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1245">
-              <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+              <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+              <folding>
+                <element signature="e#82#235#0" expanded="false" />
+                <element signature="e#279#378#0" expanded="false" />
+                <element signature="e#422#525#0" expanded="false" />
+                <element signature="e#570#676#0" expanded="false" />
+                <element signature="e#730#843#0" expanded="false" />
+                <element signature="e#896#1013#0" expanded="false" />
+                <element signature="e#1068#1188#0" expanded="false" />
+                <element signature="e#1227#1493#0" expanded="false" />
+                <element signature="e#1532#1751#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -121,34 +142,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BSTController.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BSTController.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/store/controller/BSTController.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.49285713" vertical-offset="0" max-vertical-offset="1230">
-              <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+              <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
               <folding>
                 <element signature="e#23#73#0" expanded="true" />
+                <element signature="e#214#393#0" expanded="false" />
+                <element signature="e#430#724#0" expanded="false" />
+                <element signature="e#766#899#0" expanded="false" />
+                <element signature="e#939#1264#0" expanded="false" />
+                <element signature="e#1307#1665#0" expanded="false" />
+                <element signature="e#1706#1978#0" expanded="false" />
+                <element signature="e#2034#2402#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="NodeTestCase.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/store/domain/NodeTestCase.py">
+      <file leaf-file-name="Console.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/store/ui/Console.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="80" max-vertical-offset="780">
-              <caret line="22" column="47" selection-start-line="22" selection-start-column="47" selection-end-line="22" selection-end-column="47" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="368" max-vertical-offset="1275">
+              <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BinarySearchTreeTestCase.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/store/domain/BinarySearchTreeTestCase.py">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/store/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
-              <caret line="27" column="11" selection-start-line="25" selection-start-column="8" selection-end-line="27" selection-end-column="11" />
-              <folding />
+            <state vertical-scroll-proportion="0.495283" vertical-offset="0" max-vertical-offset="636">
+              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+              <folding>
+                <element signature="e#23#79#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,16 +199,18 @@
         <option value="$PROJECT_DIR$/tests/store/domain/test_domain.py" />
         <option value="$PROJECT_DIR$/src/store/domain/Node.py" />
         <option value="$PROJECT_DIR$/tests/store/domain/BinarySearchTreeTestCase.py" />
-        <option value="$PROJECT_DIR$/src/store/domain/BinarySearchTree.py" />
         <option value="$PROJECT_DIR$/tests/store/repository/FileRepositoryTestCase.py" />
         <option value="$PROJECT_DIR$/tests/store/repository/test_repository.py" />
         <option value="$PROJECT_DIR$/tests/store/test_main.py" />
-        <option value="$PROJECT_DIR$/src/store/repository/Repository.py" />
         <option value="$PROJECT_DIR$/tests/store/repository/RepositoryTestCase.py" />
         <option value="$PROJECT_DIR$/src/store/repository/FileRepository.py" />
-        <option value="$PROJECT_DIR$/src/store/repository/BSTFileRepository.py" />
         <option value="$PROJECT_DIR$/tests/store/controller/BSTControllerTestCase.py" />
+        <option value="$PROJECT_DIR$/src/store/main.py" />
         <option value="$PROJECT_DIR$/src/store/controller/BSTController.py" />
+        <option value="$PROJECT_DIR$/src/store/domain/BinarySearchTree.py" />
+        <option value="$PROJECT_DIR$/src/store/ui/Console.py" />
+        <option value="$PROJECT_DIR$/src/store/repository/Repository.py" />
+        <option value="$PROJECT_DIR$/src/store/repository/BSTFileRepository.py" />
       </list>
     </option>
   </component>
@@ -343,6 +375,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BinaryTreeProblem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="BinaryTreeProblem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="store" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="repository" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -435,52 +489,7 @@
       <recent name="$PROJECT_DIR$/tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in BSTControllerTestCase">
-    <configuration default="false" name="test_repository" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/store/repository" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="BinaryTreeProblem" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/store/repository/test_repository.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittests in BSTControllerTestCase" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/store/controller" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="BinaryTreeProblem" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/store/controller/BSTControllerTestCase.py" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.main">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -663,39 +672,29 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="test_main" type="PythonConfigurationType" factoryName="Python">
+    <configuration default="false" name="main" type="PythonConfigurationType" factoryName="Python">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests/store" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/store" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="BinaryTreeProblem" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/store/test_main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/store/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
       <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <list size="3">
-      <item index="0" class="java.lang.String" itemvalue="Python.test_main" />
-      <item index="1" class="java.lang.String" itemvalue="Python.test_repository" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in BSTControllerTestCase" />
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Python.main" />
     </list>
-    <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in BSTControllerTestCase" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test_repository" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -725,9 +724,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21688312" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21688312" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22139038" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28983957" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -754,7 +753,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <option name="time" value="9" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -896,14 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/domain/Node.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="348" max-vertical-offset="1245">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/store/domain/test_domain.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
@@ -911,14 +902,6 @@
           <folding>
             <element signature="e#23#38#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/repository/Repository.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="945">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -930,28 +913,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/repository/BSTFileRepository.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="8" max-vertical-offset="915">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-          <folding>
-            <element signature="e#23#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/store/domain/BinarySearchTreeTestCase.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
           <caret line="27" column="11" selection-start-line="25" selection-start-column="8" selection-end-line="27" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/controller/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="599">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -966,20 +931,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/store/domain/BinarySearchTree.py">
+    <entry file="file://$PROJECT_DIR$/src/store/controller/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1980">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="599">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/domain/Node.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="480">
+          <caret line="71" column="24" selection-start-line="71" selection-start-column="24" selection-end-line="71" selection-end-column="24" />
+          <folding>
+            <element signature="e#82#235#0" expanded="false" />
+            <element signature="e#279#378#0" expanded="false" />
+            <element signature="e#422#525#0" expanded="false" />
+            <element signature="e#570#676#0" expanded="false" />
+            <element signature="e#730#843#0" expanded="false" />
+            <element signature="e#896#1013#0" expanded="false" />
+            <element signature="e#1068#1188#0" expanded="false" />
+            <element signature="e#1227#1493#0" expanded="false" />
+            <element signature="e#1532#1751#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/ui/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="636">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/store/controller/BSTController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49285713" vertical-offset="0" max-vertical-offset="1230">
-          <caret line="23" column="32" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <caret line="67" column="45" selection-start-line="67" selection-start-column="45" selection-end-line="67" selection-end-column="45" />
           <folding>
             <element signature="e#23#73#0" expanded="true" />
+            <element signature="e#214#393#0" expanded="false" />
+            <element signature="e#430#724#0" expanded="false" />
+            <element signature="e#766#899#0" expanded="false" />
+            <element signature="e#939#1264#0" expanded="false" />
+            <element signature="e#1307#1665#0" expanded="false" />
+            <element signature="e#1706#1978#0" expanded="false" />
+            <element signature="e#2034#2402#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/domain/BinarySearchTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="390">
+          <caret line="134" column="29" selection-start-line="134" selection-start-column="29" selection-end-line="134" selection-end-column="29" />
+          <folding>
+            <element signature="e#128#242#0" expanded="false" />
+            <element signature="e#280#822#0" expanded="false" />
+            <element signature="e#873#1455#0" expanded="false" />
+            <element signature="e#1493#2941#0" expanded="false" />
+            <element signature="e#2981#3203#0" expanded="false" />
+            <element signature="e#3264#4005#0" expanded="false" />
+            <element signature="e#4038#4161#0" expanded="false" />
+            <element signature="e#4195#4320#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/repository/Repository.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1035">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/repository/BSTFileRepository.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1305">
+          <caret line="72" column="39" selection-start-line="72" selection-start-column="39" selection-end-line="72" selection-end-column="39" />
+          <folding>
+            <element signature="e#23#73#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/ui/Console.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+          <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/store/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.495283" vertical-offset="0" max-vertical-offset="636">
+          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding>
+            <element signature="e#23#79#0" expanded="true" />
           </folding>
         </state>
       </provider>

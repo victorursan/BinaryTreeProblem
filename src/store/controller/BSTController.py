@@ -49,8 +49,8 @@ class BSTController(object):
         :param data: the data of the node we want to remove
         """
         if self.__binarySTree is not None:
-            self.__binarySTree.delete(data)
             node = self.__binarySTree.search(data)
+            self.__binarySTree.delete(data)
             self.__repo.delete(node)
         else:
             print("Can't remove from an empty tree")

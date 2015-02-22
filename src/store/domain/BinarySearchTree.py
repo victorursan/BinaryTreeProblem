@@ -37,14 +37,15 @@ class BinarySearchTree(Node):
         :param parent: node's parent
         :returns: node and node's parent if found or None, None
         """
-        if data < self.data:
-            if self.left is None:
-                return None, None
-            return self.left.search(data, self)
-        elif data > self.data:
-            if self.right is None:
-                return None, None
-            return self.right.search(data, self)
+        if self.data is not None:
+            if data < self.data:
+                if self.left is None:
+                    return None, None
+                return self.left.search(data, self)
+            elif data > self.data:
+                if self.right is None:
+                    return None, None
+                return self.right.search(data, self)
         return self, parent
 
     def delete(self, data):
@@ -125,3 +126,17 @@ class BinarySearchTree(Node):
             if high >= self.data and self.right:
                 self.right.nodes_in_range(low, high, lst)
         return lst
+
+    def __str__(self):
+        """ The string value of the node
+
+        :return: the data of the node as string
+        """
+        return str(self.data)
+
+    def __repr__(self):
+        """ The representation of the node
+
+        :return: the data of the node as string
+        """
+        return str(self.data)
