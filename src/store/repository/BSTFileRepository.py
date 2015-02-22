@@ -1,8 +1,7 @@
-from store.domain.Node import Node
-
 __author__ = 'victor'
 
 from store.repository.Repository import Repository
+from store.domain.Node import Node
 
 
 class BSTFileRepository(Repository):
@@ -11,16 +10,16 @@ class BSTFileRepository(Repository):
         self.__file_name = file_name
         self.__load_tree()
 
-    def save(self, item):
-        super().save(item)
-        self.__save_node(item)
+    def save(self, node: Node):
+        super().save(node.data)
+        self.__save_node(node)
 
-    def update(self, item1, item2):
-        super().update(item1, item2)
+    def update(self, node1: Node, node2: Node):
+        super().update(node1.data, node2.data)
         self.__update_file()
 
-    def delete(self, item):
-        super().delete(item)
+    def delete(self, node: Node):
+        super().delete(node.data)
         self.__update_file()
 
     def __load_tree(self):
@@ -29,8 +28,7 @@ class BSTFileRepository(Repository):
                 for line in f:
                     arr = line.split(", ")
                     for char in arr:
-                        n = Node(int(char))
-                        super().save(n)
+                        super().save(int(char))
         except Exception as ex:
             print("Error opening file {ex}".format(ex=ex))
 
@@ -38,8 +36,8 @@ class BSTFileRepository(Repository):
         try:
             with open(self.__file_name, "w") as f:
                 lst = self.get_all()
-                for node in lst:
-                    n = "{nod}, ".format(nod=node.data) if node != lst[-1] else str(node.data)
+                for node_data in lst:
+                    n = "{nod}, ".format(nod=node_data) if node_data != lst[-1] else str(node_data)
                     f.write(n)
         except Exception as ex:
             print("Error opening file {ex}".format(ex=ex))
