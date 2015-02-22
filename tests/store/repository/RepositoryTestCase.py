@@ -2,6 +2,7 @@ __author__ = 'victor'
 
 from unittest import TestCase
 from store.domain.Node import Node
+from store.repository.Repository import Repository
 
 
 class RepositoryTestCase(TestCase):
