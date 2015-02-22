@@ -36,12 +36,15 @@ class BSTController(object):
 
         :param data: the data for the node
         """
+        to_save = True
         if self.__binarySTree is None:
             self.__binarySTree = BinarySearchTree(data)
         else:
+            to_save =  self.__binarySTree.search(data)[0] == None
             self.__binarySTree.insert(data)
-        node = self.__binarySTree.search(data)
-        self.__repo.save(node)
+        node = self.__binarySTree.search(data)[0]
+        if to_save:
+            self.__repo.save(node)
 
     def remove_node(self, data):
         """ Remove a node from the BinarySearchTree
@@ -49,7 +52,7 @@ class BSTController(object):
         :param data: the data of the node we want to remove
         """
         if self.__binarySTree is not None:
-            node = self.__binarySTree.search(data)
+            node = self.__binarySTree.search(data)[0]
             self.__binarySTree.delete(data)
             self.__repo.delete(node)
         else:

@@ -112,7 +112,7 @@ class BinarySearchTree(Node):
         :param lst: list of nodes
         :returns: a list of nodes in range
         """
-        if not lst:
+        if lst is None:
             lst = []
         if self.data in range(low, high + 1):
             lst.append(self)

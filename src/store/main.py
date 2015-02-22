@@ -1,7 +1,7 @@
 __author__ = 'victor'
 
+from store.repository.BSTFileRepository import BSTFileRepository
 from store.controller.BSTController import BSTController
-from store.repository.Repository import Repository
 from store.ui.Console import Console
 
 
@@ -10,7 +10,7 @@ class App(object):
     def main(cls):
         """Set up the app
         """
-        repo = Repository()
+        repo = BSTFileRepository("binarySearchTree.txt")
 
         bst_controller = BSTController(repo)
 
