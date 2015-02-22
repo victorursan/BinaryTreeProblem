@@ -2,6 +2,7 @@ __author__ = 'victor'
 
 from unittest import TestCase
 from store.domain.Node import Node
+from store.controller.BSTController import BSTController
 from store.repository.Repository import Repository
 
 
