@@ -127,6 +127,21 @@ class BinarySearchTree(Node):
                 self.right.nodes_in_range(low, high, lst)
         return lst
 
+    def tree_nodes(self, lst=None):
+        """ Returns all the nodes in the tree
+
+        :return: all nodes in the tree
+        """
+        if lst is None:
+            lst = []
+        if self:
+            lst.append(self)
+        if self.left:
+            self.left.tree_nodes(lst)
+        if self.right:
+            self.right.tree_nodes(lst)
+        return lst
+
     def __str__(self):
         """ The string value of the node
 

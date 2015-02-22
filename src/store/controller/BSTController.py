@@ -31,6 +31,12 @@ class BSTController(object):
         """
         return self.__repo.get_all()
 
+    def get_all_nodes(self):
+        """ Gets all nodes from the tree
+        :return: all the nodes from the tree
+        """
+        return self.__binarySTree.tree_nodes()
+
     def add_node(self, data):
         """ Add a node to the BinarySearchTree
 
@@ -40,7 +46,7 @@ class BSTController(object):
         if self.__binarySTree is None:
             self.__binarySTree = BinarySearchTree(data)
         else:
-            to_save =  self.__binarySTree.search(data)[0] == None
+            to_save = self.__binarySTree.search(data)[0] is None
             self.__binarySTree.insert(data)
         node = self.__binarySTree.search(data)[0]
         if to_save:
@@ -53,8 +59,9 @@ class BSTController(object):
         """
         if self.__binarySTree is not None:
             node = self.__binarySTree.search(data)[0]
-            self.__binarySTree.delete(data)
-            self.__repo.delete(node)
+            if node is not None:
+                self.__binarySTree.delete(data)
+                self.__repo.delete(node)
         else:
             print("Can't remove from an empty tree")
 

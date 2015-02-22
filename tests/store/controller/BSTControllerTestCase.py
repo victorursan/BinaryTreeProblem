@@ -42,3 +42,9 @@ class BSTControllerTestCase(TestCase):
         test if the proper nodes are returned
         """
         self.assertEqual({n.data for n in self.__ctrl.find_nodes_in_range(10, 60)}, {45, 50, 55})
+
+    def test_get_all_nodes(self):
+        """
+        test if tree has the corresponding nodes
+        """
+        self.assertEqual({n.data for n in self.__ctrl.get_all_nodes()}, {45, 50, 55})

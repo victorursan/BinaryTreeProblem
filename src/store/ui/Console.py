@@ -1,6 +1,9 @@
 __author__ = 'victor'
 
 from store.controller.BSTController import BSTController
+import networkx as nx
+import numpy as np
+import matplotlib.pyplot as plt
 
 
 class Console(object):
@@ -58,14 +61,26 @@ class Console(object):
         else:
             print(self.__bst_controller.find_nodes_in_range(args[0], args[1]))
 
+    def __ui_draw_graph(self, *args):
+        """ Draws the binary search tree
+        """
+        G = nx.Graph()
+        for node in self.__bst_controller.get_all_nodes():
+            if node.left:
+                G.add_edge(node.data, node.left.data)
+            if node.right:
+                G.add_edge(node.data, node.right.data)
+        nx.draw(G)
+        plt.show()
+
     def run(self):
         """ Prints the menu with the options
         """
         options = {"add": self.__ui_add, "remove": self.__ui_remove, "find": self.__ui_find,
-                   "range": self.__ui_find_in_range}
+                   "range": self.__ui_find_in_range, "draw": self.__ui_draw_graph}
         while True:
             print("\nOptions:\n1. add <data>\n2. remove <data>\n3. find <data>\n"
-                  "4. range <low_bound> <high_bound>\n5. exit\n")
+                  "4. range <low_bound> <high_bound>\n5. draw\n6. exit\n")
             inp = input("> ").strip()
             if inp == "exit":
                 break
